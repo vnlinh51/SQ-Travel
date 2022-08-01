@@ -532,6 +532,7 @@ input {
 }
 
 /* Video */
+
 .video_container {
   padding-bottom: 1rem;
 }
@@ -981,6 +982,10 @@ input {
 }
 
 @media screen and (min-width: 1024px) {
+  .theme__icon {
+    padding-left: 20px;
+  }
+
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1029,19 +1034,29 @@ input {
     font-size: var(--h2-font-size);
   }
 
+  .video__button {
+    right: 7rem;
+    bottom: -1.5rem;
+    padding: 1.5rem 2rem;
+  }
+
   .experience__content {
     margin: var(--mb-1);
     column-gap: 3.5rem;
   }
 
   .experience__overlay:nth-child(1) {
-    width: 467px;
-    margin-right: 7rem;
+    width: 567px;
+    margin-right: 10rem;
   }
 
   .experience__overlay:nth-child(2) {
-    width: 250px;
-    top: 5rem;
+    width: 300px;
+    top: 9rem;
+  }
+
+  .video {
+    margin-top: 90px;
   }
 
   .video__container {
@@ -1053,12 +1068,17 @@ input {
   }
 
   .place__container {
+    grid-template-columns: repeat(3, max-content);
     gap: 3rem 2rem;
   }
 
   .place__card,
   .place__img {
-    height: 280px;
+    height: 440px;
+  }
+
+  .subscribe__form {
+    margin: 0 20px;
   }
 
   .footer__content {

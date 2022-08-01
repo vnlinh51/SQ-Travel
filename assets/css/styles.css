@@ -153,6 +153,7 @@ input {
 
 button {
   cursor: pointer;
+  -webkit-appearance: none;
 }
 
 input {

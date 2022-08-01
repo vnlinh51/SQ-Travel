@@ -127,6 +127,7 @@ h3 {
   color: var(--title-color);
   font-weight: var(--font-semi-bold);
   font-family: var(--title-font);
+  /* text-shadow: 0 0 5px #000; */
 }
 
 ul {
@@ -190,6 +191,7 @@ input {
   left: 0;
   z-index: var(--z-fixed);
   background-color: transparent;
+  text-shadow: 0 0 5px #000;
 }
 
 /* Nav */
@@ -266,6 +268,7 @@ input {
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, 0.15);
+  text-shadow: none;
 }
 
 .scroll-header .nav__logo,
@@ -450,6 +453,7 @@ input {
   position: relative;
   width: 200px;
   overflow: var(--img-hidden);
+  text-shadow: 0 0 5px #000;
 }
 
 .discover__data {
@@ -518,7 +522,7 @@ input {
 .experience__overlay:nth-child(2) {
   width: 120px;
   position: absolute;
-  top: 2rem;
+  top: 4rem;
   right: 0;
 }
 
@@ -588,6 +592,7 @@ input {
   flex-direction: column;
   justify-content: space-between;
   padding: 0.75rem 0.75rem 1rem;
+  text-shadow: 0 0 5px #000;
 }
 
 .place__rating {
@@ -792,7 +797,7 @@ input {
   background-color: var(--text-color-light);
 }
 
-/* Media query */
+/*---------------------- Responsive -------------------------- */
 @media screen and (max-width: 340px) {
   .home__info {
     width: 190px;
@@ -814,8 +819,8 @@ input {
 
   .experience__overlay:nth-child(2) {
     width: 80px;
-    margin-top: 30px;
-    margin-right: 20px;
+    margin-top: -30px;
+    margin-right: -10px;
   }
 
   .experience__img,
@@ -824,7 +829,7 @@ input {
   }
 }
 
-@media screen and (max-width: 568px) {
+@media screen and (min-width: 568px) {
   .video__container {
     display: grid;
     grid-template-columns: 0.6fr;
@@ -834,12 +839,16 @@ input {
     grid-template-columns: repeat(3, max-content);
   }
   .subscribe__form {
-    width: 470px;
+    width: 525px;
     margin: 0 auto;
   }
 }
 
-@media screen and (min-width: 768px) {
+/* @media (min-width: 740px) and (max-width: 1023px) {
+} */
+/* @media screen and (min-width: 768px) {} */
+
+@media screen and (min-width: 767px) {
   body {
     margin: 0;
   }
@@ -959,6 +968,7 @@ input {
 
   .experience__overlay:nth-child(2) {
     width: 160px;
+    top: 5rem;
   }
 
   .subscribe__bg {
@@ -1010,11 +1020,11 @@ input {
   }
 
   .about__img-one {
-    width: 240px;
+    width: 205px;
   }
 
   .about__img-two {
-    width: 290px;
+    width: 250px;
   }
 
   .discover__card {
@@ -1047,12 +1057,12 @@ input {
 
   .experience__overlay:nth-child(1) {
     width: 567px;
-    margin-right: 10rem;
+    margin-right: 9rem;
   }
 
   .experience__overlay:nth-child(2) {
-    width: 300px;
-    top: 9rem;
+    width: 270px;
+    top: 6rem;
   }
 
   .video {
@@ -1078,7 +1088,8 @@ input {
   }
 
   .subscribe__form {
-    margin: 0 20px;
+    /* margin: 0 20px; */
+    width: 600px;
   }
 
   .footer__content {
